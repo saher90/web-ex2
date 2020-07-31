@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2 mb-3">
+                <h1>Pizza order</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 offset-2">
+                <div id="form-wrap">
+                    <form onsubmit="return false">
+                        <div class="form-group">
+                            <h6><b>Size:</b></h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="radio1" value="Small" checked>
+                                <label class="form-check-label" for="radio1">Small - 10$</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="radio2" value="Medium" >
+                                <label class="form-check-label" for="radio2">Medium - 15$</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="radio3" value="Large" >
+                                <label class="form-check-label" for="radio3">Large - 18$</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h6><b>Extras</b> [2$ each]:</h6>
+                            <div class="form-extras">
+                                <input class="extras" type="checkbox" name="extras" id="checkbox1" value="Olives">
+                                <label class="form-check-label" for="checkbox1">Olives</label>
+                            </div>
+                            <div class="form-extras">
+                                <input class="extras" type="checkbox" name="extras" id="checkbox2" value="Mushrooms">
+                                <label class="form-check-label" for="checkbox2">Mushrooms</label>
+                            </div>
+                            <div class="form-extras">
+                                <input class="extras" type="checkbox" name="extras" id="checkbox3" value="Onion">
+                                <label class="form-check-label" for="checkbox3">Onion</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <h6><b>Delivery Method</b></h6>
+                            <label for="deliveryType"></label>
+                            <select class="form-control" id="deliveryType">
+                                <option>Take Away</option>
+                                <option>Special Delivery [5$]</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="yourName" placeholder="Name *">
+                            <div class="invalid-feedback">Please fill name</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="yourEmail" placeholder="Email *">
+                            <div class="invalid-feedback">Please fill a valid email</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="yourTel" placeholder="Telephone *">
+                            <div class="invalid-feedback">Please fill Telephone</div>
+                        </div>
+                        <input type="submit" value="Order" id="btn-submit" >
+
+                    </form>
+
+                </div>
+            </div>
+
+        
+        <div class="col-4">
+            <div id="output"></div>
+        </div>
+        </div>
+    </div>
+
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.5/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <script src="ex2_app.js"></script>
+     
+</body>
+</html>
